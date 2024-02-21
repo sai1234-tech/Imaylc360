@@ -15,16 +15,6 @@ function App() {
     role6: useRef(null),
 };
 
-  // const scrollToRole = (role) => {
-  //   const targetRef = roleRefs[role];
-  //   if (targetRef.current) {
-  //     const offset = targetRef.current.offsetTop - 200;
-  //     window.scrollTo({
-  //       top: offset,
-  //       behavior: 'smooth',
-  //     });
-  //   }
-  // };
 
   const scrollToRole = (role) => {
     const targetRef = roleRefs[role];
