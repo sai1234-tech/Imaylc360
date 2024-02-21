@@ -1,0 +1,272 @@
+.navbar_main_div{
+   height: fit-content;
+   width: 100%;
+   position: fixed;
+   top: 0%;
+   z-index: 1;
+}
+.navbar_sub_main_div{
+    height:6.638888888888889vw;
+    width: 100%;
+    margin-left: 0%;
+    background-color: #FFFFFF;
+    position: relative;  
+}
+.navbar_sub_div_under_nav{
+    height: 3.236111111111111vw;
+    width: 100%;
+    background-color: #F3F3F380;
+    border: 0.1vw solid #ADADAD;
+}
+.imayllogo_navbar{
+    height:3vw ;
+    width:12.13888888888889vw;
+    margin-left: 4%;
+}
+
+.contact_us_main_div_button{
+    height: 2.361111111111111vw;
+    width: 8.763888888888889vw;
+    background-color: #3EA94C;
+    border: none;
+    border-radius: 0.3vw;
+    font-size: ;
+    color: #FFFFFF;
+    font-size: 0.8vw;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact_us_main_div_button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.login_nav_main_div_button{
+    height: 2.361111111111111vw;
+    width: 7.029861111111112vw;
+    background-color: #1B5683;
+    border: none;
+    border-radius: 0.3vw;
+    color: #FFFFFF;
+    font-size: 0.8vw;
+    margin-left: 2%;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.login_nav_main_div_button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.signup_nav_main_div_button{
+    height: 2.361111111111111vw;
+    width: 7.029861111111112vw;
+    background-color: #1B5683;
+    border: none;
+    border-radius: 0.3vw;
+    color: #FFFFFF;
+    font-size: 0.8vw;
+    margin-left: 2%;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.signup_nav_main_div_button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.blog_nav_main_div_button{
+    height: 2.361111111111111vw;
+    width: 7.029861111111112vw;
+    border: none;
+    border-radius: 0.3vw;
+    color: #FFFFFF;
+    font-size: 0.8vw;
+    margin-left: 2%;
+    text-align: center;
+    font-weight: 500;
+    background-color: #EA4F06;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.blog_nav_main_div_button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.request_demo_nav_main_div_button{
+    height: 2.361111111111111vw;
+    width: 11.475694444444445vw;
+    border: none;
+    border-radius: 0.3vw;
+    color: #FFFFFF;
+    font-size: 0.8vw;
+    margin-left: 2%;
+    text-align: center;
+    font-weight: 500;
+    background-color: #1490AC;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.request_demo_nav_main_div_button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.imayl_nav_bar_buttons_holder{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 38%;
+    display: block;
+}
+.imayl_sub_nav_text_button{
+    height: fit-content;
+    width: fit-content;
+    border: none !important;
+    font-size: 1vw;
+    cursor: pointer;
+    margin-left: 8%;
+    white-space: nowrap;
+    color: black;
+    font-weight: 500;
+}
+
+.imayl_sub_nav_text_button_holder{
+    margin-left: 47%;
+    width:fit-content;
+}
+.one_million_text_div{
+    height: fit-content;
+    width: fit-content;
+}
+.one_million_text_span{
+    height:fit-content;
+    width: fit-content;
+    font-weight: 500;
+    font-size:1.8472222222222223vw;
+}
+.SUBSCRIBERS_GLOBLLY{
+    font-weight: 300;
+    margin-left: 1vw;
+}
+.imayllogo_navbar_toggle{
+    display: none !important;
+}
+
+.imayl_nav_bar_buttons_div_holder{
+    display:none !important;
+    background-color: red;
+}
+
+.zsiq_theme1.zsiq_floatmain {
+    width: 60px;
+    max-height: 60px;
+    bottom: 10%;
+    right: 3%;
+}
+
+@media screen and (max-width: 767px) {
+    .imayl_nav_bar_buttons_holder{
+        display: none !important;
+    }
+    .navbar_sub_div_under_nav{
+        height: 10vw;
+        text-align: center;
+    }
+    .imayl_sub_nav_text_button_holder{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .imayl_sub_nav_text_button{
+        font-size: 2vw;
+        margin-left: 3.7%;
+    }
+    .navbar_sub_main_div{
+        height: 12vw;
+    }
+    .imayl_nav_bar_buttons_div_holder{
+        display: block !important;
+        position: absolute;
+        background-color: #FFFFFF;
+        height: 20vw;
+        width:100%;
+        margin-left: 0%;
+        top: 12vw;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0.1vw 0.1vw 0.5vw 0.1vw;
+        animation: toggled 0.5s ease-in-out;
+    }
+    .contact_us_main_div_button{
+        height: 5.361111vw;
+        width: 20.763889vw;
+        margin-left: 3.2%;
+        font-size: 2vw;
+        border-radius: 1vw;
+        margin-top: 4%;
+    }
+    .login_nav_main_div_button{
+        height: 5.361111vw;
+        width: 20.763889vw;
+        margin-left: 3.2%;
+        font-size: 2vw;
+        border-radius: 1vw;
+        margin-top: 4%;
+    }
+    .signup_nav_main_div_button{
+        height: 5.361111vw;
+        width: 20.763889vw;
+        margin-left: 3.2%;
+        font-size: 2vw;
+        border-radius: 1vw;
+        margin-top: 4%;
+    }
+    .blog_nav_main_div_button{
+        height: 5.361111vw;
+        width: 20.763889vw;
+        margin-left: 3.2%;
+        font-size: 2vw;
+        border-radius: 1vw;
+        margin-top: 4%;
+    }
+    .request_demo_nav_main_div_button{
+        height: 5.361111vw;
+        width: 30.763889vw;
+        margin-left: 3%;
+        font-size: 2vw;
+        border-radius: 1vw;
+        margin-top: 2%;
+    }
+    .imayllogo_navbar_toggle{
+        display: block !important;
+        height: 4vw;
+        width: 5vw;
+        margin-left: 5%;
+    }
+    .imayllogo_navbar{
+        height: 4.263888888888889vw;
+        width: 18.13888888888889vw;
+        margin-left: 30%;
+    }
+ 
+}
+
+@keyframes toggled {
+    0%{
+        top: 0%;
+        z-index: -1;
+    }
+    90%{
+        top: 12vw;
+        z-index: -1;
+    }
+    100%{
+        top: 12vw;
+        z-index: 2;
+    }
+   }
+  

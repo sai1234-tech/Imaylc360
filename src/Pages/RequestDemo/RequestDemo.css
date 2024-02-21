@@ -1,0 +1,24 @@
+.requestdemo_div_boxes_divs_holder{
+    height:16vw;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+}
+.you_run_profitable{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .you_run_profitable{
+        font-size: 3vw;
+    }
+}
+
+

@@ -1,0 +1,90 @@
+.request_demo_form_main_div {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.yes_iwant_request_demo {
+    font-size: 2.0833333333333335vw;
+    margin-top: 2%;
+}
+
+.yes_iwant_request_demo_form_holder {
+    margin-top: 4%;
+    width: 70%;
+}
+
+.input_form_request_call {
+    width: 100%;
+    margin-top: 1%;
+    height: 2.3vw;
+    background-color: #F9F7F7;
+    border: 0.1vw solid #D2D2D2;
+    border-radius: 0.2vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.input_form_request_call::placeholder {
+    color: #999999;
+    padding-left: 1vw !important;
+    font-size: 0.9vw !important;
+    display: flex;
+    align-items: center;
+    font-weight: 800 !important;
+    top: 20%;
+    position: absolute;
+}
+
+.input_form_request_call_label {
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.scheduleDemo_btn{
+    background-color: #1E8492;
+    height: 4vw;
+    width: 12.8vw;
+    color: #FFFFFF;
+    font-size: 1.2vw;
+    border: none;
+    margin-top: 7%;
+    font-weight: 500;
+    border-radius: 0.2vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .yes_iwant_request_demo {
+        font-size: 5.083333vw;
+        margin-top: 10%;
+    }
+    .input_form_request_call {
+        height: 7.3vw;
+        font-size: 3.5vw;
+    }
+    .input_form_request_call::placeholder {
+        color: #999999;
+        padding-left: 1vw !important;
+        font-size: 2.8vw !important;
+        display: flex;
+        align-items: center;
+        top: 20%;
+        position: absolute;
+    }
+    .input_form_request_call_label {
+        font-size: 3vw;
+        margin-top: 6%;
+    }
+    .scheduleDemo_btn {
+        background-color: #1E8492;
+        height: 13vw;
+        width: 41.8vw;
+        color: #FFFFFF;
+        font-size: 3.4vw;
+        border: none;
+        margin-top: 14%;
+        font-weight: 500;
+        border-radius: 1vw;
+        margin-bottom: 8%;
+    }
+}

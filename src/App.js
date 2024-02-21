@@ -1,7 +1,10 @@
 import { useRef } from 'react';
 import './App.css';
 import Home from './Pages/Home/Home';
-import Navbar from './Pages/Home/Navbar/Navbar';
+import Navbar from '../src/Components/Navbar/Navbar';
+import Contactus from './Pages/Contactus/Contactus';
+import RequestDemo from './Pages/RequestDemo/RequestDemo';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -32,8 +35,16 @@ function App() {
   return (
     <div className="App">
       <Navbar scrollToRole={scrollToRole}/>
-      <Home rolerefer={roleRefs}/>
+      <Routes>
+        <Route path='/' element={<Home rolerefer={roleRefs} />}>
+        </Route>
+        <Route path='/contactus' element={<Contactus />}>
+        </Route>
+        <Route path='/requestdemo' element={<RequestDemo />}>
+        </Route>
+      </Routes>
     </div>
+
   );
 }
 

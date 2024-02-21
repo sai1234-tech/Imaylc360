@@ -1,0 +1,165 @@
+.contactus_site_sub_div_margin_top {
+    height: 6.6vw;
+}
+
+.contact-us-main-div {
+    height: 60vw !important;
+    width: 100%;
+    display: flex;
+}
+
+.contact-us-main-div {
+    width: 100%;
+    height: 50vw;
+}
+
+.backgroundimage_contactuse_holder_div {
+    height: 100%;
+    width: 60%;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.backgroundimage_contactuse_holder_div {
+    background-size: 100% 100%;
+}
+
+.start_trail_contactus_holder_div {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 3.0694444444444446vw;
+    margin-top: 20%;
+    animation: starttrail 2s ease-in-out;
+}
+
+@keyframes starttrail {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Test_drive_the_contactus {
+    font-size: 1.4930555555555556vw;
+    margin-top: 2%;
+    width: 20vw;
+    color: #FFFFFF;
+    height: fit-content;
+    animation: starttrail 2s ease-in-out;
+}
+
+.getstartedContact_us {
+    width: 12.194444444444445vw;
+    height: 4.236111111111111vw;
+    background-color: #F5BA34;
+    border: none;
+    border-radius: 2.0833333333333335vw;
+    color: #FFFFFF;
+    font-size: 1.3958333333333335vw;
+    font-weight: 500;
+    margin-top: 4.0680555555555555vw;
+    animation: getstart 1s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.getstartedContact_us:hover {
+    text-decoration: underline;
+}
+
+@keyframes getstart {
+    0% {
+        height: 1vw;
+        width: 1vw;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        width: 12.194444444444445vw;
+        height: 4.236111111111111vw;
+    }
+}
+
+.northamerica_europe_support_holder-div {
+    height: 100%;
+    width: 40%;
+   
+}
+
+.northamerica_europe_support_sub-divs {
+    height: 33.3%;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 1.3888888888888888vw;
+    width: 100%;
+    overflow: hidden;
+   
+}
+.northamerica_europe_support_sub-divs span{
+    animation: getbox 2s ease-in-out;
+}
+@keyframes getbox {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-us-main-div {
+        height: fit-content !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backgroundimage_contactuse_holder_div {
+        height: 65vw !important;
+        width: 100%;
+        background-size: 100% 135vw;
+        background-repeat: no-repeat;
+        background-color: red;
+    }
+
+    .northamerica_europe_support_holder-div {
+        width: 100%;
+    }
+
+    .northamerica_europe_support_sub-divs {
+        height: 30vw;
+    }
+
+    .start_trail_contactus_holder_div {
+        font-size: 6.3vw;
+        width: 90%;
+    }
+
+    .Test_drive_the_contactus {
+        font-size: 4vw;
+        width: 60vw;
+    }
+
+    .getstartedContact_us {
+        width: 25.194444vw;
+        height: 9.236111vw;
+        font-size: 3vw;
+        cursor: pointer;
+        border-radius: 20vw;
+    }
+
+    .northamerica_europe_support_sub-divs {
+        font-size: 3.5vw;
+        height: 50vw;
+    }
+}
