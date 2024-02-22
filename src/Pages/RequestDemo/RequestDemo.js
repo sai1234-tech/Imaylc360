@@ -11,7 +11,7 @@ function RequestDemo() {
             <div className='contactus_site_sub_div_margin_top'>
             </div>
             <div className='contact-us-main-div'>
-                <div className='backgroundimage_contactuse_holder_div d-flex flex-column align-items-center' style={{ backgroundImage: `url(${bgcontactus})` }} >
+                <div className='backgroundimage_contactuse_holder_div_requestdemo d-flex flex-column align-items-center' style={{ backgroundImage: `url(${bgcontactus})` }} >
                     <div className='start_trail_contactus_holder_div'>
                         <span>GET STARTED WITH OUR PACKAGE
                             MANAGEMENT SOFTWARE TODAY</span>

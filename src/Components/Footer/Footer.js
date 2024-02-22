@@ -7,10 +7,12 @@ import tw from '../../Assets/tw.png';
 import linkedin from '../../Assets/Linkedin.png';
 
 import yt from '../../Assets/yt.png';
+import { useNavigate } from 'react-router-dom';
 
 
 function Footer() {
 
+    const navigate =useNavigate()
  
 
     const handleclickfb = () => {
@@ -34,8 +36,13 @@ function Footer() {
     }
 
     const handleclickrequestcall = () => {
-        const url = 'https://cloud.imayl.com/requestcall.html';
-        window.open(url, '_blank');
+        // const url = 'https://cloud.imayl.com/requestcall.html';
+        // window.open(url, '_blank');
+        navigate('/requestcall');
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     const handleclickterms = () => {

@@ -41,9 +41,11 @@
     font-size: 1vw;
     font-weight: 500;
 }
-.scheduleDemo_btn{
+
+.scheduleDemo_btn {
     background-color: #1E8492;
     height: 4vw;
+    margin-left: 30%;
     width: 12.8vw;
     color: #FFFFFF;
     font-size: 1.2vw;
@@ -53,15 +55,23 @@
     border-radius: 0.2vw;
 }
 
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1024px) {
     .yes_iwant_request_demo {
         font-size: 5.083333vw;
         margin-top: 10%;
     }
+
     .input_form_request_call {
         height: 7.3vw;
         font-size: 3.5vw;
     }
+
     .input_form_request_call::placeholder {
         color: #999999;
         padding-left: 1vw !important;
@@ -71,10 +81,12 @@
         top: 20%;
         position: absolute;
     }
+
     .input_form_request_call_label {
         font-size: 3vw;
         margin-top: 6%;
     }
+
     .scheduleDemo_btn {
         background-color: #1E8492;
         height: 13vw;
@@ -86,5 +98,6 @@
         font-weight: 500;
         border-radius: 1vw;
         margin-bottom: 8%;
+        margin-left: 20%;
     }
 }

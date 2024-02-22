@@ -10,7 +10,6 @@ function Navbar({ scrollToRole }) {
 
     const location = useLocation();
     const isDisabled = location.pathname === '/';
-    console.log(isDisabled)
 
     const handleclickContactus = () => {
         // window.location.href = 'https://cloud.imayl.com/contactus.html';

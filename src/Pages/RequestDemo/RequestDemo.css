@@ -14,10 +14,25 @@
     font-weight: 800;
     font-size: 1.5vw;
 }
+.backgroundimage_contactuse_holder_div_requestdemo {
+    height: 100%;
+    width: 60%;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.backgroundimage_contactuse_holder_div_requestdemo {
+    background-size: 100% 100% ;
+}
 
 @media screen and (max-width: 1024px) {
     .you_run_profitable{
         font-size: 3vw;
+    }
+    .backgroundimage_contactuse_holder_div_requestdemo{
+        height: 90vw;
+        width: 100%;
+        background-size: 100% 170vw;
     }
 }
 

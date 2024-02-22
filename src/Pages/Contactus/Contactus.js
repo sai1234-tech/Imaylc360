@@ -4,6 +4,10 @@ import bgcontactus from '../../Assets/contactusbg.png'
 import Footer from '../../Components/Footer/Footer'
 
 function Contactus() {
+    const handleclickstartfree = () => {
+        const url = 'https://cloud.imayl.com/register.html';
+        window.open(url, '_blank');
+      }
     return (
         <div className='contact-us-main-div_holder'>
             <div className='contactus_site_sub_div_margin_top'>
@@ -16,7 +20,7 @@ function Contactus() {
                     <div className='Test_drive_the_contactus'>
                         <span>Test drive the full iMayl  experience, free for 30-days.</span>
                     </div>
-                    <button className='getstartedContact_us'>Get Started</button>
+                    <button className='getstartedContact_us' onClick={handleclickstartfree} >Get Started</button>
                 </div>
                 <div className='northamerica_europe_support_holder-div'>
                     <div className='northamerica_europe_support_sub-divs d-flex flex-column justify-content-center align-items-center' style={{backgroundColor:'#CBC1B7'}}>
