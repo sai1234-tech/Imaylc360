@@ -121,7 +121,7 @@ function Requestform() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        const toEmails = ['mandavenkatakotaiah@gmail.com'];
+        const toEmails = ['info@imayl.com','gopi.raj@imayl.com','Kumar@imayl.com','abhi@imayl.com'];
         toEmails.forEach((toEmail) => {
             form.current['to_email'].value = toEmail;
             form.current['to_request'].value = rout;
