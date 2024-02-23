@@ -41,6 +41,7 @@ function Navbar({ scrollToRole }) {
     }
 
     const handleclickedImayl = () => {
+        navigate('/');
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
