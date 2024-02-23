@@ -228,7 +228,7 @@ function Requestform() {
                             onChange={handleInputChangemobile}
                         />
                     </div>
-                    <button style={{ opacity: emaildata ? 1 : 0.5 }} disabled={emaildata ? false : true} type="submit" className='scheduleDemo_btn' >
+                    <button style={{ opacity: emaildata ? 1 : 0.5, cursor:'pointer' }} disabled={emaildata ? false : true} type="submit" className='scheduleDemo_btn' >
                         {isDisabled ? 'Schedule a Demo' : 'Request a call'}
                     </button>
                     <input style={{ display: 'none' }} className='input_form_request_call' name='to_email' placeholder='Email' />
