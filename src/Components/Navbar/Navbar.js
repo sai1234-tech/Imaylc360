@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 function Navbar({ scrollToRole }) {
     const navigate = useNavigate()
-
+    const [togglebar, setTogglebar] = useState(false)
     const location = useLocation();
     const isDisabled = location.pathname === '/';
 
@@ -18,17 +18,22 @@ function Navbar({ scrollToRole }) {
             top: 0,
             behavior: 'smooth'
         });
+        setTogglebar(false);
+
     }
     const handleclickLogin = () => {
         window.location.href = 'https://cloud.imayl.com/login.html';
+        setTogglebar(false);
     }
 
     const handleclicksignup = () => {
         window.location.href = 'https://cloud.imayl.com/register.html';
+        setTogglebar(false);
     }
 
     const handleclickblog = () => {
         window.location.href = 'https://cloud.imayl.com/blog/blog.html';
+        setTogglebar(false);
     }
 
     const handleclickDemo = () => {
@@ -38,6 +43,7 @@ function Navbar({ scrollToRole }) {
             top: 0,
             behavior: 'smooth'
         });
+        setTogglebar(false);
     }
 
     const handleclickedImayl = () => {
@@ -46,9 +52,10 @@ function Navbar({ scrollToRole }) {
             top: 0,
             behavior: 'smooth'
         });
+        setTogglebar(false);
     }
 
-    const [togglebar, setTogglebar] = useState(false)
+
     const handleclickedtoggle = () => {
         setTogglebar(!togglebar)
     }
