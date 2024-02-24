@@ -37,12 +37,10 @@ function App() {
     <div className="App">
       <Navbar scrollToRole={scrollToRole} />
       <Routes>
-        <Route path='/' element={<Home rolerefer={roleRefs} />}>
-        </Route>
+        <Route path='/' element={<Home rolerefer={roleRefs} />}/>
         <Route path='/contactus' element={<Contactus />} />
         <Route path='/requestdemo' element={<RequestDemo />} />
-        <Route path='/requestcall' element={<Requestcall />}>
-        </Route>
+        <Route path='/requestcall' element={<Requestcall />}/> 
       </Routes>
     </div>
 

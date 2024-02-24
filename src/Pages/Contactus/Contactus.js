@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Contactus/Contactus.css'
 import bgcontactus from '../../Assets/contactusbg.png'
 import Footer from '../../Components/Footer/Footer'
@@ -8,6 +8,13 @@ function Contactus() {
         const url = 'https://cloud.imayl.com/register.html';
         window.open(url, '_blank');
       }
+
+      useEffect(()=>{
+         window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+      },[])
     return (
         <div className='contact-us-main-div_holder'>
             <div className='contactus_site_sub_div_margin_top'>

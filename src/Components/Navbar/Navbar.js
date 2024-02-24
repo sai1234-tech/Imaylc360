@@ -14,10 +14,6 @@ function Navbar({ scrollToRole }) {
     const handleclickContactus = () => {
         // window.location.href = 'https://cloud.imayl.com/contactus.html';
         navigate('/contactus');
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
         setTogglebar(false);
 
     }
@@ -39,19 +35,11 @@ function Navbar({ scrollToRole }) {
     const handleclickDemo = () => {
         // window.location.href = 'https://cloud.imayl.com/requestdemo.html';
         navigate('/requestdemo');
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
         setTogglebar(false);
     }
 
     const handleclickedImayl = () => {
         navigate('/');
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
         setTogglebar(false);
     }
 
