@@ -119,27 +119,62 @@ function Requestform() {
 
     }, []);
 
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     const toEmails = ['info@imayl.com','gopi.raj@imayl.com','Kumar@imayl.com','abhi@imayl.com'];
+    //     toEmails.forEach((toEmail) => {
+    //         form.current['to_email'].value = toEmail;
+    //         form.current['to_request'].value = rout;
+    //         emailjs
+    //             .sendForm('service_39roopl', 'template_0mii1zg', form.current, {
+    //                 publicKey: 'bAv5mfqrVIcnX98e0',
+    //             })
+    //             .then(
+    //                 () => {
+    //                     alert(`SUCCESS! Email sent`);
+    //                 },
+    //                 (error) => {
+    //                     alert(`FAILED to send email`);
+    //                 },
+    //             );
+    //     });
+    // };
+
+
     const sendEmail = (e) => {
         e.preventDefault();
-        const toEmails = ['info@imayl.com','gopi.raj@imayl.com','Kumar@imayl.com','abhi@imayl.com'];
-        toEmails.forEach((toEmail) => {
-            form.current['to_email'].value = toEmail;
-            form.current['to_request'].value = rout;
-            emailjs
-                .sendForm('service_39roopl', 'template_0mii1zg', form.current, {
-                    publicKey: 'bAv5mfqrVIcnX98e0',
-                })
-                .then(
-                    () => {
-                        alert(`SUCCESS! Email sent`);
-                    },
-                    (error) => {
-                        alert(`FAILED to send email`);
-                    },
-                );
+        const toEmails = ['info@imayl.com', 'gopi.raj@imayl.com', 'Kumar@imayl.com', 'abhi@imayl.com'];
+    
+        const emailPromises = toEmails.map((toEmail) => {
+            return new Promise((resolve, reject) => {
+                form.current['to_email'].value = toEmail;
+                form.current['to_request'].value = rout;
+    
+                emailjs
+                    .sendForm('service_39roopl', 'template_0mii1zg', form.current, {
+                        publicKey: 'bAv5mfqrVIcnX98e0',
+                    })
+                    .then(
+                        () => {
+                            resolve(); // Resolve the promise if successful
+                        },
+                        (error) => {
+                            reject(error); // Reject the promise if there's an error
+                        },
+                    );
+            });
         });
+    
+        Promise.all(emailPromises)
+            .then(() => {
+                alert(`SUCCESS! email sent`);
+            })
+            .catch(() => {
+                alert(`FAILED to send one or more emails`);
+            });
     };
 
+    
     const handleInputChangemobile = (event) => {
         const numericValue = event.target.value.replace(/[^0-9]/g, '');
         setValue(numericValue);
