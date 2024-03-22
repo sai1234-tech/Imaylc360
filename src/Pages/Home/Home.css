@@ -25,6 +25,9 @@
 
 .iMayl_Edge_AI_CLR {
     color: #3EA94C;
+    font-weight: 600 !important;
+    /* font-weight: 800 !important; */
+
 }
 .ipad_center_image{
     width: 10vw;
@@ -54,15 +57,20 @@
 
 .enterprices_mainroom_text_imayl_div {
     height: fit-content;
-    width: 39%;
+    width: 50%;
     text-align: left;
     font-size: 1.8vw;
-    font-weight: 600;
-    color: white;
+    font-weight: 500 !important;
+    /* color: white; */
+    color:#4A4A4A;
     position: absolute;
+    padding-left: 2vw !important;
+    padding-top: .5vw !important;
     top: 5%;
     left: 8%;
     animation: enterprices 2s ease-in-out;
+    background-color: #D7E9FF !important;
+    padding-bottom: 1vw !important;;
 }
 
 .AI-PD_Suite {
@@ -89,7 +97,7 @@
     height: 100%;
     width: 100%;
     margin-top: 0vw;
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
 }
 
 .imayl_experience_text_holder_div {
@@ -100,6 +108,7 @@
     width: 100%;
     color: #368ED2;
     font-size: 2.0208333333333335vw;
+    font-weight: 700 !important;
     animation: experiencetext ease-in-out;
     animation-timeline: view(48.611111111111114vw 0.6944444444444444vw);
 }
@@ -107,7 +116,9 @@
 .Better_than_easy_text {
     margin-top: 2.360417vw;
     font-size: 1.7vw;
-    color: black;
+    /* color: black; */
+    color: #4E4E4E;
+    font-weight: 600 !important;
     animation: experiencetext ease-in-out;
     animation-timeline: view(48.611111111111114vw 0.6944444444444444vw);
 }
@@ -117,13 +128,14 @@ a {
 }
 
 .iMayl_allows_you_to_improve {
-    font-size: 1.9vw;
+    font-size: 1.39vw;
     color:#4E4E4E;
-    width: 69%;
-    margin-left: 15%;
+    width: 50%;
+    margin-left: 24%;
     margin-top: 2.7777777777777777vw;
     animation: experiencetext ease-in-out;
     animation-timeline: view(700px 10px);
+    font-weight: 400 !important;
 }
 
 .experience_img_holder_div {
@@ -131,7 +143,7 @@ a {
     width: 69.0625vw;
     position: relative;
     margin-left: 18%;
-    margin-top: 3.222222222222222vw;
+    margin-top: 4.222222222222222vw;
     animation: expimg linear;
     animation-timeline: view(40.611111111111114vw 0.6944444444444444vw);
 }
@@ -187,20 +199,27 @@ a {
     font-size: 2.0208333333333335vw;
     animation: experiencetext ease-in-out;
     animation-timeline: view(48.611111111111114vw 0.6944444444444444vw);
+    font-weight: 700 !important;
 }
 
 .imayl_logopackage_sub_text_div {
     text-align: left;
-    /* background-color: red; */
-    margin-top: 2%;
+    /* background-color: green; */
+    margin-top: 9%;
     width: fit-content;
     margin-left: 9%;
 }
-
+#imayl_logopackage_sub_text_div_1{
+    margin-top: 15.4%;
+    /* background-color: #000000; */
+    width: 46% !important;
+}
 .carrier_delivers_packages {
     font-size: 1.7vw;
     font-weight: 500;
     width: 76%;
+    background-color: red !important;
+    margin-top: 6.4% !important;
 }
 
 .Simply_take_a_picture {
@@ -213,10 +232,18 @@ a {
 
 .package_into_the_web {
     font-size: 1.8vw;
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-weight: 400;
     color: #4E4E4E;
     font-size: 1.7vw;
-    width: 76%;
+    width: 100%;
+    /* width: 66%; */
+    /* background-color: red; */
+}
+#imayl_logopackage_sub_text_div{
+    /* background-color: green; */
+    width: 45%;
+
 }
 
 .logpackage_main_holder_div {
@@ -237,14 +264,17 @@ a {
 }
 
 .start_free_trial {
-    height: 2.8472222222222223vw;
-    width: 16.180555555555557vw;
+    height: 2.9972222222222223vw;
+    /* width: 16.180555555555557vw; */
+    width: 10.8555555555557vw;
     background-color: #EA4F06;
     font-size: 1.2vw;
     color: #FFFFFF;
     border: none;
-    margin-top: 9%;
-    margin-left: 25%;
+    margin-top: 24%;
+    position: absolute;
+    left:25.3%;
+    /* margin-left: 2%; */
     border-radius: 0.3vw;
     font-weight: 500;
     transition: 0.3s ease-in-out;
@@ -252,22 +282,31 @@ a {
 }
 
 .logpackage_main_holder_div_img {
-    height: 100%;
+    height: 99%;
+    /* height: 80% !important; */
     width: 100%;
 }
 
 .imayl_track_a_package_main_main_div {
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
     height: 45.87777777777778vw;
     width: 100%;
     position: relative;
     margin-top: 0%;
 }
-
+#imayl_track_a_package_main_main_div{
+    height: 57.87777777777778vw;
+    background: none !important;
+    /* background-color: red !important; */
+}
+#cds span{
+  display: flex;
+  justify-content: center !important;
+}
 .imayl_track_a_package_main_sub_div {
     height: 100%;
     width: 100%;
-    border: 0.1vw solid #F2F2F2;
+    /* border: 0.1vw solid #F2F2F2; */
 }
 
 .imayl_track_a_package_sub_main_div {
@@ -278,7 +317,7 @@ a {
     font-size: 2.0208333333333335vw;
     animation: experiencetext ease-in-out;
     animation-timeline: view(48.611111111111114vw 0.6944444444444444vw);
-
+   font-weight: 700 !important;
 }
 
 .After_taking_the_picture {
@@ -314,21 +353,30 @@ a {
 }
 
 .iMayl_helps_you_improve {
-    width: 90%;
+    width: 43%;
     font-size: 1.3819444444444442vw;
     font-weight: 400;
-    margin-left: 5%;
-    margin-top: 1.5%;
+    margin-left: 29.4%;
+    margin-top: 1%;
+    color: #000000;;
+    font-weight: 500 !important;
+    
 }
 
 .how_it_helps_theory_main_div {
     margin-top: 2vw;
     font-weight: 500;
+    /* background-color: red !important; */
+}
+#ensure_1{
+    margin-top: 1vw;
+
 }
 
 .ease_of_use {
     color: #3D68AA;
     font-size: 1.1458333333333333vw;
+    font-weight: 700 !important;
 }
 
 .simplay_take_pic_how_it_help {
@@ -339,42 +387,58 @@ a {
 .Activity_Alerts_and_Notifications {
     color: #AE322E;
     font-size: 1.1458333333333333vw;
+    font-weight: 700 !important;
+
 }
 
 .End-to-End_chain {
     color: #368ED2;
     font-size: 1.1458333333333333vw;
+    font-weight: 700 !important;
+
 }
 
 .Eco-Friendly {
     color: #006600;
     font-size: 1.1458333333333333vw;
+    font-weight: 700 !important;
+}
+.Eco-Friendly_{
+    color: #B17A0E;
+    font-size: 1.1458333333333333vw;
+    font-weight: 700 !important; 
 }
 
 .imayl_how_it_help_sub_text_div {
     position: relative;
     text-align: left;
     margin-left: 8%;
-    width: 40%;
+    /* width: 40%; */
+    width: 16% !important;
 }
 
 .howit_main_holder_div {
     height: 30.194444vw;
     width: 37.666667vw;
-        margin-top: 0%;
-        margin-left: 5%;
+        margin-top: 1%;
+        margin-left: 6%;
         position: relative;
 }
 
 .Why_there’s_nothing {
     width: 80%;
+    width: 50% !important;
     font-size: 1.7vw;
     font-weight: 500;
     height: fit-content;
-    margin-left: 10%;
+    margin-left: 25%;
     margin-top: 2%;
+    
 }
-
+#our_solutions{
+    color: #3C3C3C;
+    font-weight: 400;
+}
 .why_there_the_picture {
     font-size: 1.7vw;
     font-weight: 500;
@@ -383,9 +447,15 @@ a {
 }
 
 .whythere_main_holder_div {
-    width: 19.625vw;
-    height: 35.458333vw;
-    margin-left: 18%;
+    /* width: 19.625vw; */
+    /* width: 60% !important;
+    height: 35.458333vw; */
+    /* margin-left: 18.5%; */
+}
+.package_img{
+    width: 100% !important;
+    height: 40vw;
+    margin-left: 15%;
 }
 
 .imayl_track_a_package_main_main_div {
@@ -395,14 +465,18 @@ a {
 
 .btn_get_imayl {
     height: 3.6805555555555554vw;
-    width: 9.166666666666666vw;
+    width: 13.966666666666666vw;
     background-color: #243A55;
     border: none;
     color: white;
     border-radius: 0.5vw;
-    margin-left: 30%;
-    margin-top: 2%;
-    font-size: 1.2vw;
+    /* margin-left: 30%; */
+    margin-top: 38%;
+    font-size: 2vw;
+    position: absolute;
+    left:44.2%;
+    font-weight: 400 !important;
+    /* background-color: red !important; */
 }
 
 .android_imayl {
@@ -422,13 +496,15 @@ a {
 
 .mobile_type_text {
     font-size: 1.3055555555555556vw;
-    font-weight: 500;
-    margin-right: 30%;
+    font-weight: 700 !important;
+    margin-right: 43%;
+    color: #333333;
+    margin-top: 5% !important;
 }
 
 .mobile_type_sub_text {
     height: fit-content;
-    width: 45%;
+    width: 60%;
     margin-right: 0%;
     text-align: left;
     font-size: 1.3819444444444442vw;
@@ -438,13 +514,15 @@ a {
 .get_the_app {
     width: 11.73611111111111vw;
     height: 2.638888888888889vw;
-    margin-right: 11%;
+    margin-right: 22%;
     background-color: #155397;
     color: #FFFFFF;
     text-align: center;
     border: none;
     font-size: 1.2vw;
     border-radius: 2vw;
+    margin-top: 7% !important;
+
 }
 
 .footer_main_div {
@@ -471,15 +549,26 @@ a {
     width: 2vw;
 }
 
+
 .sub_footer_main_div {
-    height: 2.5vw;
+    height: 3.5vw;
     width: 100%;
     border-top: 0.1vw solid #FFFFFF;
     background-color: #333333;
     font-size: 0.9166666666666666vw;
     color: #FFFFFF;
 }
-
+.signup_div_button_{
+    background-color: #FFFFFF;
+    width: 11.768vw;
+    height: 2.646vw;
+    border-radius: 1.39vw;
+    color: #1B5682;
+    font-size: 1.11vw;
+    font-weight: 700;
+    border: none;
+    margin-top: 2%;
+}
 .IMAYL_INC {
     margin-left: 3%;
 }
@@ -562,7 +651,7 @@ a {
     .enterprices_mainroom_text_imayl_div {
         font-size: 3vw;
         margin-left: -3%;
-        margin-top: -3%;
+        margin-top: -2%;
     }
 
     .enterprices_main_room_div {
@@ -579,7 +668,10 @@ a {
         width: 30vw !important;
         font-size: 2.2vw;
         border-radius: 0.5vw;
-        margin-left: 0%;
+        /* margin-left: 0%; */
+        position: absolute;
+        left:15vw !important;
+        margin-top: 47%;
     }
 
     .icons_parent_div_imayl {
@@ -614,6 +706,7 @@ a {
         font-size: 3.2vw;
         width: 90%;
         margin-left: 5%;
+        /* background-color: red !important; */
     }
 
     .imayl_experience_main_main_div {
@@ -623,13 +716,21 @@ a {
     .imayl_log_a_package_sub_main_div {
         font-size: 4vw;
     }
-
+    .flex-column-reverse {
+        /* -webkit-box-orient: vertical !important;
+        -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column !important; */
+        flex-direction: column !important;
+    }
     .imayl_log_a_package_main_main_div {
         /* height: 145.55555555555554vw; */
         height: fit-content;
-        padding-bottom: 20vw;
+        /* padding-bottom: 20vw; */
+        /* background-color: red; */
     }
-
+    .text_image_holder_imayl {
+        margin-top: 3vw;
+    }
     .logpackage_main_holder_div {
         height: 58.888888888888886vw;
         width: 54.166666666666664vw;
@@ -658,17 +759,25 @@ a {
         font-weight: 400;
         width: 90%;
     }
+    #package_into_the_web__{
+        width: 74vw;
+
+    }
 
     .imayl_track_a_package_main_main_div {
         height: fit-content;
     }
+ 
 
     .trackpackage_main_holder_div {
         width: 56.46666666666667vw;
         height: 58.888888888888886vw;
         margin-left: 20%;
     }
-
+    #imayl_log_a_package_main_main_div {
+        margin-top:10%;
+    }
+   
     .After_taking_the_picture {
         font-size: 4vw;
         text-align: center;
@@ -715,6 +824,9 @@ a {
         width: 100%;
         margin-left: 0%;
     }
+    #ease_of_use{
+        width:85vw;
+    }
 
     .simplay_take_pic_how_it_help {
         font-size: 4vw;
@@ -736,24 +848,43 @@ a {
         width: 70vw;
     }
 
-    .Eco-Friendly {
+    .Eco-Friendly,.Eco-Friendly_ {
         font-size: 4vw;
         width: 100%;
         margin-left: 0%;
         width: 70vw;
     }
+    #ensure_1 {
+        margin-top: 1vw;
+        width: 41vw;
+    }
 
     .whythere_main_holder_div {
-        width: 45.833333333333336vw;
-        height: 92.13055555555556vw;
-        margin-left: 30%;
+        width: 100vw;
+        height: 75vw;
+        margin-left: 0%;
+        /* background-color: red !important; */
     }
-
+   
     .Why_there’s_nothing {
         font-size: 4vw;
+        width:90% !important;
+        margin-left:5% !important;
+        /* background-color: red ; */
+        margin-top:5% !important;
 
     }
-
+    .package_img {
+        width: 100% !important;
+        height: 40vw;
+        margin-left: 0%;
+        margin-top:5%;
+    }
+    #imayl_track_a_package_main_main_div {
+        height: 100%;
+        background: none !important;
+        /* background-color: red !important; */
+    }
     .why_there_the_picture {
         font-size: 4vw;
         text-align: left;
@@ -766,19 +897,26 @@ a {
         font-weight: 400;
         text-align: left;
     }
+  
 
     .btn_get_imayl {
-        height: 9.680556vw;
-        width: 27.166667vw;
+        height: 8.680556vw;
+        width: 20.166667vw;
         border-radius: 1vw;
-        margin-left: 30%;
-        margin-top: 2%;
+        position: absolute;
+        left:42vw;
+        margin-top: 50%;
         font-size: 3.2vw;
-        margin-bottom: 5vw;
     }
 
     .The_chain_of {
-        text-align: center;
+        /* text-align: center; */
+        /* text-align: left; */
+    }
+    #imayl_logopackage_sub_text_div{
+        /* background-color: green; */
+        width: 90%;
+        margin-left:6%;
     }
 
     .imayl_logopackage_sub_text_div {
@@ -809,7 +947,7 @@ a {
         font-size: 4vw;
         width: 70%;
         margin-left: 0%;
-        text-align: center;
+        /* text-align: center; */
         margin-top: 2%;
     }
 
@@ -818,12 +956,13 @@ a {
         width: 30vw;
         border-radius: 20vw;
         margin-left: 10%;
-        margin-top: 3%;
+        margin-top: 3% !important;
         font-size: 3vw;
     }
 
     .footer_main_div {
         height: 98.61111111111111vw;
+        margin-top:4vw;
     }
 
     .calllogo {
@@ -851,6 +990,17 @@ a {
         width: 50vw !important;
         margin-left: 7%;
         margin-top: 5%;
+    }
+    .signup_div_button_ {
+        background-color: #FFFFFF;
+        width: 21.768vw;
+        height: 7.646vw;
+        border-radius: 1.39vw;
+        color: #1B5682;
+        font-size: 4vw !important;
+        /* font-weight: 700; */
+        border: none;
+        margin-top: 2%;
     }
 
     .Policy {

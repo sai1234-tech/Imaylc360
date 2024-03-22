@@ -249,8 +249,6 @@ function Requestform() {
                     <div className=' d-flex flex-column align-items-start'>
                         <label className='input_form_request_call_label'>Email</label>
                         <input onChange={handlechangeemail} type='email' className='input_form_request_call' name='email' placeholder='Email' />
-
-
                     </div>
                     <div className=' d-flex flex-column align-items-start'>
                         <label className='input_form_request_call_label' name='mobile'>Phone Number</label>

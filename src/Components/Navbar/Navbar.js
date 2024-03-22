@@ -67,7 +67,7 @@ function Navbar({ scrollToRole }) {
                             BLOG
                         </button>
                         <button className='request_demo_nav_main_div_button' onClick={handleclickDemo}>
-                            Request A Demo
+                            REQUEST A DEMO
                         </button>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ function Navbar({ scrollToRole }) {
                         BLOG
                     </button>
                     <button className='request_demo_nav_main_div_button' onClick={handleclickDemo}>
-                        Request A Demo
+                    REQUEST A DEMO
                     </button>
                 </div> : null
             }

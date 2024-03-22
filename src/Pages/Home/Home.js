@@ -2,11 +2,13 @@ import React from 'react'
 import './Home.css'
 import experience from '../../Assets/experience.png';
 import imayledge from '../../Assets/imayledge.png';
+import imagewidthtruck from "../../Assets/Imagwithtruck.png"
 import logpackage from '../../Assets/logpackage.png';
 import trackpackage from '../../Assets/trackpackage.png';
 import Deliever from '../../Assets/delieverpackage.png'
 import howit from '../../Assets/howit.png';
 import getimayl from '../../Assets/getimayl.png';
+import PackageReceiving from '../../Assets/PackageReceiving.png'
 import getimaylbg from '../../Assets/getimaylbg.png';
 import android from '../../Assets/Androidimayl.png';
 import iphone from '../../Assets/iPhoneimayl.png';
@@ -56,7 +58,7 @@ function Home(prop) {
     <div className='imayl_site_main_div'>
       <div className='imayl_site_sub_div_margin_top'>
       </div>
-      <div className='enterprices_main_room_div' style={{ backgroundImage: `url(${imayledge})` }}>
+      <div className='enterprices_main_room_div' style={{ backgroundImage: `url(${imagewidthtruck})` }}>
         <div>
           <img src={handimage} className='imayledge_hand_img' />
         </div>
@@ -64,22 +66,27 @@ function Home(prop) {
           <span>
             <span className='iMayl_Edge_AI_CLR'>iMayl Edge AI </span>ENABLED
           </span>
-          <span className='AI-PD_Suite'>Inbound & Outbound Package Delivery Software
-            ONE MILLION <span style={{ color: 'red' }}>(1M)</span> SUBSCRIBERS GLOBLLY
+          <span className='AI-PD_Suite'>Inbound & Outbound Package Delivery Software over <br/>
+            <b>ONE MILLION</b> <span style={{ color: '#CD1A1A',fontWeight:'800' }}>(1M)</span> SUBSCRIBERS GLOBALLY
           </span>
-          <span className='AI-PD_Suite'>#1 Leading AI-PD Suite for Inbound/Outbound is powering change in package delivery process.
+          <span className='AI-PD_Suite'>
+          <span style={{ color: '#CD1A1A',fontWeight:'800'}}> #1 </span>
+           Leading AI-PD Suite for powering change in package delivery process.
           </span>
-          <button className='start_free_trial' onClick={handleclickstartfree}>START FREE TRIAL </button>
+          {/* <button className='start_free_trial' onClick={handleclickstartfree}>GET A DEMO </button> */}
         </div>
+        <button className='start_free_trial' onClick={handleclickstartfree}>GET A DEMO </button>
+
       </div >
+
       <div className='imayl_experience_main_main_div' ref={role.role1} >
         <div className='imayl_experience_main_sub_div' >
           <div className='imayl_experience_text_holder_div d-flex flex-column'>
             <span>The iMayl Experience</span>
-            <span className='Better_than_easy_text'>STREAMLINE INBOUND AND OUTBOUND PACKAGE DELIEVER WITH REAL-TIME TRACKING.</span>
+            <span className='Better_than_easy_text'>STREAMLINE INBOUND AND OUTBOUND PACKAGE DELIEVERY WITH REAL-TIME TRACKING.</span>
             <div className='iMayl_allows_you_to_improve d-flex flex-column'>
-              <span>iMayl allows you to improve visibility and stop wasting time receiving and tracking</span>
-              <span> for internal mail packages once a carrier has delivered them to your facility like mailroom / warehouse / stockroom.</span>
+              <span>IMayl Allows You To Improve Visibility And Stop Wasting Time Receiving </span>
+              <span>And Tracking Or Internal Mail Packages Once A Carrier Has Delivered Them To Your Facility Like Mailroom / Warehouse / Stockroom.</span>
             </div>
             <div className='experience_img_holder_div'>
               <img className='experience_img' src={experience} />
@@ -91,15 +98,21 @@ function Home(prop) {
       <div className='imayl_log_a_package_main_main_div' ref={role.role2}>
         <div className='imayl_log_a_package__main_sub_div'>
           <div className='imayl_log_a_package_sub_main_div'>
-            <span>Log a Package</span>
+            <span>LOG A PACKAGE</span>
           </div>
           <div className='text_image_holder_imayl d-flex flex-column-reverse flex-md-row'>
-            <div className='d-flex flex-column imayl_logopackage_sub_text_div '>
-              <span className='carrier_delivers_packages'>CARRIER DELIVERS PACKAGES AND YOU LOG THEM IN WITH</span>
-              <span className='carrier_delivers_packages'>PACKAGE SCANNER APP</span>
-              <span className='Simply_take_a_picture The_chain_of'>Simply take a picture of the address label and iMayl receives the </span>
-              <span className='package_into_the_web The_chain_of'>package into the web based tracking solution.</span>
-              <span className='package_into_the_web The_chain_of '>The chain of custody begins.</span>
+            <div className='d-flex flex-column imayl_logopackage_sub_text_div ' id="imayl_logopackage_sub_text_div">
+           
+              {/* <span className='package_into_the_web The_chain_of'>Scan Or Take A Picture Of The Lable On The Box, The </span>
+              <span className='package_into_the_web The_chain_of'>Information Is Captured And Notification Is Sent To The</span>
+              <span className='package_into_the_web The_chain_of'>Receipient Or Information Is Passed To The Backend System </span> */}
+
+              <span className='package_into_the_web The_chain_of'>
+              Scan Or Take A Picture Of The Lable On The Box, The Information Is Captured And Notification Is Sent To The Receipient Or Information Is Passed To The Backend System.
+              </span>
+              {/* <span className='package_into_the_web The_chain_of'>System</span> */}
+              <br/><br/>
+              <span className='package_into_the_web The_chain_of '>The Chain Of Custody Begins With A Scan Or A Picture.</span>
             </div>
             <div className='logpackage_main_holder_div'>
               <img className='logpackage_main_holder_div_img' src={logpackage} />
@@ -116,11 +129,11 @@ function Home(prop) {
             <div className='trackpackage_main_holder_div'>
               <img className='logpackage_main_holder_div_img' src={trackpackage} />
             </div>
-            <div className='d-flex flex-column imayl_logopackage_sub_text_div'>
-              <span className='After_taking_the_picture The_chain_of'>After taking the picture you can confirm receiver and add any </span>
-              <span className='package_into_the_web The_chain_of'>necessary details about the package. Click save and an on-demand </span>
-              <span className='package_into_the_web The_chain_of'>internal package tracking label can be printed and receiver is </span>
-              <span className='package_into_the_web The_chain_of'>notified by email of its arrival.</span>
+            <div className='d-flex flex-column imayl_logopackage_sub_text_div' id="imayl_logopackage_sub_text_div_1">
+              {/* <span className='After_taking_the_picture The_chain_of'>After taking the picture you can confirm receiver and add any </span>
+              <span className='package_into_the_web The_chain_of'>necessary details about the package. Click save and an on-demand </span> */}
+              <span className='package_into_the_web The_chain_of' id="package_into_the_web__">Track Your Package With All The Details.Track From  AnyWhere At Anytime</span>
+              {/* <span className='package_into_the_web The_chain_of'>AnyWhere At Anytime</span> */}
             </div>
           </div>
         </div>
@@ -133,10 +146,11 @@ function Home(prop) {
           <div className='text_image_holder_imayl d-flex flex-column-reverse flex-md-row'>
             <div className='d-flex flex-column imayl_deliveryopackage_sub_text_div  '>
               {/* <span className='Simply_take_a_picture'>Mailman making delivery to   </span> */}
-              <span className='package_into_the_web The_chain_of'>Mailman making delivery to   </span>
-              <span className='package_into_the_web The_chain_of'>receiver takes a picture of  </span>
-              <span className='package_into_the_web The_chain_of'>The tracking label and can also capture a signature.</span>
-              <span className='package_into_the_web The_chain_of'>also capture a signature.</span>
+              <span className='package_into_the_web The_chain_of'>Package Will Be Delivered To The   </span>
+              <span className='package_into_the_web The_chain_of'>Receipient Or To Warehouse  </span>
+              <span className='package_into_the_web The_chain_of'>Location. Any Necessary </span>
+              <span className='package_into_the_web The_chain_of'>Information Or Picture Or Signature</span>
+              <span className='package_into_the_web The_chain_of'>Is Captured. </span>
             </div>
             <div className='deliver_package_main_holder_div'>
               <img className='logpackage_main_holder_div_img' src={Deliever} />
@@ -144,51 +158,91 @@ function Home(prop) {
           </div>
         </div>
       </div>
-      <div className='imayl_log_a_package_main_main_div' ref={role.role5}>
+      <div className='imayl_log_a_package_main_main_div' id="imayl_log_a_package_main_main_div" ref={role.role5}>
         <div className='imayl_log_a_package__main_sub_div'>
-          <div className='imayl_log_a_package_sub_main_div'>
-            <span>How It Helps Your Organization</span>
+          <div className='imayl_log_a_package_sub_main_div' id='cds'>
+            <span>INBOUND RECEIVING – MAILROOM/WAREHOUSE </span>
+             <span>PACKAGE MANAGEMENT SOFTWARE ADVANTAGE</span>
           </div>
-          <div className='iMayl_helps_you_improve'>
+          {/* <div className='iMayl_helps_you_improve'>
             <span>iMayl helps you improve visibility and accountability and stop wasting time receiving, dispatching, tracking items coming into and leaving your facilities</span>
-          </div>
+          </div> */}
           <div className='text_image_holder_imayl d-flex flex-column-reverse flex-md-row'>
             <div className='d-flex flex-column imayl_how_it_help_sub_text_div '>
               <div className='how_it_helps_theory_main_div d-flex flex-column'>
-                <span className='ease_of_use'>Ease of Use</span>
-                <span className='simplay_take_pic_how_it_help'>Simply take a picture of incoming mail packages even by standard iOS/ Android devices and let iMayl do the rest. </span>
+                <span className='ease_of_use' id="ease_of_use">Centralized Receiving Mailroom/Warehouse</span>
+                {/* <span className='simplay_take_pic_how_it_help'>Centralized Receiving Mailroom/Warehouse</span> */}
               </div>
               <div className='how_it_helps_theory_main_div d-flex flex-column'>
-                <span className='Activity_Alerts_and_Notifications'>Activity Alerts and Notifications</span>
-                <span className='simplay_take_pic_how_it_help'>iMayl notifies receivers when packages are received and out for delivery. </span>
+                <span className='Activity_Alerts_and_Notifications'>Streamline Delivery</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl notifies receivers when packages are received and out for delivery. </span> */}
               </div>
               <div className='how_it_helps_theory_main_div d-flex flex-column'>
-                <span className='End-to-End_chain'>End-to-End Chain of Custody</span>
-                <span className='simplay_take_pic_how_it_help'>iMayl records all receiving, tendering, and delivery events so you have complete chain of custody or trail of events.</span>
+                <span className='End-to-End_chain'>Improved Compliance</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl records all receiving, tendering, and delivery events so you have complete chain of custody or trail of events.</span> */}
               </div>
               <div className='how_it_helps_theory_main_div d-flex flex-column'>
-                <span className='Eco-Friendly'>Eco-Friendly</span>
-                <span className='simplay_take_pic_how_it_help'>iMayl is eco-friendly by allowing you eliminate the need for paper, paper clutter on your desk and in our landfills.</span>
+                <span className='Eco-Friendly'>Secure your premises</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl is eco-friendly by allowing you eliminate the need for paper, paper clutter on your desk and in our landfills.</span> */}
+              </div>
+              <div className='how_it_helps_theory_main_div d-flex flex-column'>
+                <span className='Eco-Friendly_'>Real-time Tracking & Notifications</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl is eco-friendly by allowing you eliminate the need for paper, paper clutter on your desk and in our landfills.</span> */}
               </div>
             </div>
             <div className='howit_main_holder_div'>
               <img className='logpackage_main_holder_div_img' src={howit} />
               {/* <img className='ipad_center_image' src={ipadcenter}/> */}
             </div>
+            {/* <div>
+
+            </div> */}
+             <div className='d-flex flex-column imayl_how_it_help_sub_text_div '>
+              <div className='how_it_helps_theory_main_div d-flex flex-column'>
+                <span className='ease_of_use' id="ensure_1">Improve Productivity</span>
+                {/* <span className='simplay_take_pic_how_it_help'>Centralized Receiving Mailroom/Warehouse</span> */}
+              </div>
+              <div className='how_it_helps_theory_main_div d-flex flex-column'>
+                <span className='Activity_Alerts_and_Notifications'  id="ensure_1">Ensure Accountability</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl notifies receivers when packages are received and out for delivery. </span> */}
+              </div>
+              <div className='how_it_helps_theory_main_div d-flex flex-column'>
+                <span className='End-to-End_chain'>Receipients are secured</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl records all receiving, tendering, and delivery events so you have complete chain of custody or trail of events.</span> */}
+              </div>
+              <div className='how_it_helps_theory_main_div d-flex flex-column'>
+                <span className='Eco-Friendly'>100% Internal Visibility</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl is eco-friendly by allowing you eliminate the need for paper, paper clutter on your desk and in our landfills.</span> */}
+              </div>
+              <div className='how_it_helps_theory_main_div d-flex flex-column'>
+                <span className='Eco-Friendly_'>End to End Chain of Custody</span>
+                {/* <span className='simplay_take_pic_how_it_help'>iMayl is eco-friendly by allowing you eliminate the need for paper, paper clutter on your desk and in our landfills.</span> */}
+              </div>
+            </div>          
           </div>
         </div>
       </div>
-      <div className='imayl_track_a_package_main_main_div' ref={role.role6} style={{ backgroundImage: `url(${getimaylbg})` }}>
+      <div className='imayl_track_a_package_main_main_div'
+      
+      id="imayl_track_a_package_main_main_div" 
+      ref={role.role6} 
+      // style={{ backgroundImage: `url(${getimaylbg})` }}
+      >
         <div className='imayl_track_a_package_main_sub_div'>
           <div className='Why_there’s_nothing'>
-            <span>WHY THERE’S NOTHING QUITE LIKE IMAYL, A STATE-OF-THE ART MAILROOM
-              MANAGEMENT SAAS PLATFORM </span>
+            <span>PACKAGE RECEIVING, DELIEVERY AND TRACKING MADE EASY!</span> 
+            <br/> 
+            <br/>
+            <span id="our_solutions">Our solution simplifies the receipt, tracking, and delivery of packages that come into and go out of your organization</span>
           </div>
           <div className='text_image_holder_imayl d-flex flex-column flex-md-row'>
             <div className='whythere_main_holder_div'>
-              <img className='logpackage_main_holder_div_img' src={getimayl} />
+              <img className='package_img' src={PackageReceiving} />
             </div>
-            <div className='d-flex flex-column imayl_logopackage_sub_text_div'>
+
+            <button className='btn_get_imayl' style={{ cursor: 'pointer' }} onClick={handleclickreqcall}>Get iMayl</button>
+
+            {/* <div className='d-flex flex-column imayl_logopackage_sub_text_div'>
               <span className='why_there_the_picture'>iMayl fully adapts to your process and doesn't need technical  </span>
               <span className='package_into_the_web'>resources. iMayl’s package logging and tracking software is intuitive </span>
               <span className='package_into_the_web'>and a breeze to customize, so you can focus on business instead of  </span>
@@ -196,17 +250,19 @@ function Home(prop) {
               <span className='why_there_the_picture'>Software should be more than a collection of features. That, above all,  </span>
               <span className='package_into_the_web'>a software should be absolutely simple, flexible, and magical to use.</span>
               <button className='btn_get_imayl' style={{ cursor: 'pointer' }} onClick={handleclickreqcall}>Get iMayl</button>
-            </div>
+            </div> */}
           </div>
+          {/* <button className='btn_get_imayl' style={{ cursor: 'pointer' }} onClick={handleclickreqcall}>Get iMayl</button> */}
+
         </div>
       </div>
       <div className='imayl_log_a_package_main_main_div '>
         <div className='imayl_log_a_package__main_sub_div'>
           <div className='imayl_log_a_package_sub_main_div'>
-            <span>How It Helps Your Organization</span>
+            <span>IMAYL FOR MOBILE</span>
           </div>
           <div className='iMayl_helps_you_improve'>
-            <span>can use your existing barcode readers/ scanners as well can use standard iOS/ Android devices</span>
+            <span>Can Use Your Existing Barcode Readers/ Scanners As Well Can Use Standard IOS/ Android Devices</span>
           </div>
           <div className='d-flex flex-column flex-md-row iphone_android_whole_parent'>
             <div className='d-flex flex-column align-items-center mobile_imayl_divs'>
@@ -215,14 +271,14 @@ function Home(prop) {
               <span className='mobile_type_sub_text'>Get the iMayl app for
                 Android from the Play
                 Store.</span>
-              <button className='get_the_app' style={{ cursor: 'pointer' }} onClick={handleclickgetandroid}>Get the app</button>
+              <button className='get_the_app' style={{ cursor: 'pointer' }} onClick={handleclickgetandroid}>GET THE APP</button>
             </div>
             <div className='d-flex flex-column align-items-center mobile_imayl_divs'>
               <img className='android_imayl' src={iphone} />
               <span className='mobile_type_text'>iPhone</span>
               <span className='mobile_type_sub_text'>Get the iMayl app for
                 iPhone from the App Store.</span>
-              <button className='get_the_app' style={{ cursor: 'pointer' }} onClick={handleclickgetios}>Get the app</button>
+              <button className='get_the_app' style={{ cursor: 'pointer' }} onClick={handleclickgetios}>GET THE APP</button>
             </div>
           </div>
         </div>

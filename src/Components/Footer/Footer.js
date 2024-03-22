@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../../Pages/Home/Home.css'
 import calllogo from '../../Assets/calllogo.png';
 import fb from '../../Assets/fb.png';
@@ -13,7 +13,8 @@ import { useNavigate } from 'react-router-dom';
 function Footer() {
 
     const navigate =useNavigate()
- 
+    const [togglebar, setTogglebar] = useState(false)
+
 
     const handleclickfb = () => {
         const url = 'https://www.facebook.com/IMAYLL';
@@ -60,16 +61,20 @@ function Footer() {
         window.location.href = `tel:${phoneNumber}`;
     }
 
+    const handleclicksignup = () => {
+        window.location.href = 'https://cloud.imayl.com/register.html';
+        setTogglebar(false);
+    }
     return (
         <>
             <div className='footer_main_div d-flex flex-column align-items-center justify-content-center' >
                 <div className='footer_img_text_holder_sub  d-flex flex-column justify-content-center align-items-center'>
                     <img className='calllogo' style={{ cursor: 'pointer' }} onClick={handlcallclicked} src={calllogo} />
-                    <span className='footer_span_tag'>888-464-2360</span>
+                    <span className='footer_span_tag'>+1 (888)-464-2360</span>
                     <span className='footer_span_tag'>info@imayl.com</span>
-                    <span className='footer_span_tag'>Speak with a package management
-                        specialist to learn more about
-                        how iMayl can help your needs.</span>
+                    <span className='footer_span_tag'>Speak time and money with iMayl 
+                   </span>
+                   <button class="signup_div_button_" onClick={handleclicksignup}>SIGN UP</button>
                 </div>
                 <div className='icons_parent_div_imayl d-flex align-items-center'>
                     <span className='footer_follow_txt'>Follow</span>
@@ -81,13 +86,12 @@ function Footer() {
                 </div>
             </div>
             <div className='sub_footer_main_div d-flex align-items-center justify-content-md-between flex-column flex-md-row'>
-                <span className='IMAYL_INC' style={{ cursor: 'pointer' }} onClick={handleclickimaylinc}>IMAYL, INC.</span>
+                <span className='IMAYL_INC' style={{ cursor: 'pointer' }} onClick={handleclickimaylinc}>@ imayl 2024</span>
                 <span className='IMAYL_INC' style={{ cursor: 'pointer' }} onClick={handleclickrequestcall}> REQUEST A CALL</span>
                 {/* <div className='d-flex terms_holder '> */}
                 <span className='Policy' style={{ cursor: 'pointer' }} onClick={handleclickterms}>TERMS OF USE </span>
                 {/* <span className='Policy' style={{ cursor: 'pointer' }} onClick={handleclickpolicy}>Privacy Policy</span> */}
                 {/* </div> */}
-
             </div>
         </>
     )
