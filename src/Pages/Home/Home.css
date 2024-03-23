@@ -286,7 +286,10 @@ a {
     /* height: 80% !important; */
     width: 100%;
 }
-
+#chaing_of_custody{
+    /* background-color: red !important; */
+    margin-top: 10% !important;
+}
 .imayl_track_a_package_main_main_div {
     /* background-color: #F2F2F2; */
     height: 45.87777777777778vw;
@@ -666,7 +669,7 @@ a {
     }
 
     .start_free_trial {
-        height: 6vw !important;
+        height: 7vw !important;
         width: 20vw !important;
         /* width: 20% !important; */
         font-size: 2.2vw;
@@ -676,6 +679,7 @@ a {
         left:14vw !important;
         margin-top: 47%;
         padding: 0;
+        
         /* background-color: red !important; */
     }
 

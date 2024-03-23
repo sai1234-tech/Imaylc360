@@ -111,8 +111,8 @@ function Home(prop) {
               Scan Or Take A Picture Of The Lable On The Box, The Information Is Captured And Notification Is Sent To The Receipient Or Information Is Passed To The Backend System.
               </span>
               {/* <span className='package_into_the_web The_chain_of'>System</span> */}
-              <br/><br/>
-              <span className='package_into_the_web The_chain_of '>The Chain Of Custody Begins With A Scan Or A Picture.</span>
+              {/* <br/><br/> */}
+              <span className='package_into_the_web The_chain_of ' id="chaing_of_custody">The Chain Of Custody Begins With A Scan Or A Picture.</span>
             </div>
             <div className='logpackage_main_holder_div'>
               <img className='logpackage_main_holder_div_img' src={logpackage} />
