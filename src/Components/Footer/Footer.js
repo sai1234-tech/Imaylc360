@@ -74,7 +74,7 @@ function Footer() {
                     <span className='footer_span_tag'>info@imayl.com</span>
                     <span className='footer_span_tag'>Speak time and money with iMayl 
                    </span>
-                   <button class="signup_div_button_" onClick={handleclicksignup}>SIGN UP</button>
+                   <button className="signup_div_button_" onClick={handleclicksignup}>SIGN UP</button>
                 </div>
                 <div className='icons_parent_div_imayl d-flex align-items-center'>
                     <span className='footer_follow_txt'>Follow</span>

@@ -466,6 +466,8 @@ a {
 .btn_get_imayl {
     height: 3.6805555555555554vw;
     width: 13.966666666666666vw;
+    width: 14.266666666666666%;
+
     background-color: #243A55;
     border: none;
     color: white;
@@ -474,7 +476,7 @@ a {
     margin-top: 38%;
     font-size: 2vw;
     position: absolute;
-    left:44.2%;
+    left:44.5%;
     font-weight: 400 !important;
     /* background-color: red !important; */
 }
@@ -650,7 +652,7 @@ a {
 
     .enterprices_mainroom_text_imayl_div {
         font-size: 3vw;
-        margin-left: -3%;
+        margin-left: -7%;
         margin-top: -2%;
     }
 
@@ -665,13 +667,16 @@ a {
 
     .start_free_trial {
         height: 6vw !important;
-        width: 30vw !important;
+        width: 20vw !important;
+        /* width: 20% !important; */
         font-size: 2.2vw;
         border-radius: 0.5vw;
         /* margin-left: 0%; */
         position: absolute;
-        left:15vw !important;
+        left:14vw !important;
         margin-top: 47%;
+        padding: 0;
+        /* background-color: red !important; */
     }
 
     .icons_parent_div_imayl {
@@ -883,7 +888,7 @@ a {
     #imayl_track_a_package_main_main_div {
         height: 100%;
         background: none !important;
-        /* background-color: red !important; */
+        margin-top: 10%;
     }
     .why_there_the_picture {
         font-size: 4vw;
@@ -901,12 +906,15 @@ a {
 
     .btn_get_imayl {
         height: 8.680556vw;
-        width: 20.166667vw;
+        /* width: 20.166667vw; */
+        width: 20.166667% !important;
         border-radius: 1vw;
         position: absolute;
-        left:42vw;
+        left:41.2vw;
         margin-top: 50%;
         font-size: 3.2vw;
+        /* background-color: red !important; */
+        padding: 0 !important;
     }
 
     .The_chain_of {
@@ -982,8 +990,9 @@ a {
     }
 
     .IMAYL_INC {
-        font-size: 2.5vw;
+        font-size: 3vw;
         margin-top: 5%;
+
     }
 
     .terms_holder {
@@ -991,16 +1000,18 @@ a {
         margin-left: 7%;
         margin-top: 5%;
     }
-    .signup_div_button_ {
+    .signup_div_button_{
         background-color: #FFFFFF;
-        width: 21.768vw;
+        width: 25vw;
         height: 7.646vw;
-        border-radius: 1.39vw;
+        border-radius: 4vw;
         color: #1B5682;
-        font-size: 4vw !important;
-        /* font-weight: 700; */
+        font-size: 3vw !important;
+        font-weight: 600;
         border: none;
         margin-top: 2%;
+        border: none !important;
+        outline: none !important;
     }
 
     .Policy {
