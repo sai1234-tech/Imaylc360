@@ -571,8 +571,9 @@ a {
     color: #1B5682;
     font-size: 1.11vw;
     font-weight: 700;
-    border: none;
+    border: none !important;
     margin-top: 2%;
+    outline: none !important;
 }
 .IMAYL_INC {
     margin-left: 3%;
